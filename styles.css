@@ -212,6 +212,20 @@ body {
   display: flex;
   gap: 35px;
 }
+.nav ul{
+ list-style: none;
+ padding: 0;
+ display:flex;
+ 
+
+}
+.nav ul li {
+  padding: 10px;
+}
+.nav ul .hoverlink {
+  padding: 10px;
+}
+
 
 .nav-link {
   text-decoration: none;
@@ -223,6 +237,42 @@ body {
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
+.nav ul .hoverlink .container {
+  position: absolute;
+  display: none;
+  gap: 50px;
+  background-color: white;
+  padding: 30px;
+  top: 75px;
+  left:30%;
+  width: auto;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: x-large;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul .hoverlink .container div {
+  text-align: center;
+}
+
+.nav ul .hoverlink .container img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav ul .hoverlink .container p {
+  font-size: 14px;
+  color: #333;
+}
+
+.nav ul .hoverlink:hover .container  {
+  
+  display:flex;
+}
+
 
 .nav-link::after {
   content: "";
